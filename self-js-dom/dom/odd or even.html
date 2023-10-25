@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num" placeholder="enter a number"><br>
+
+<input type="button" onclick="check()" value="check"><br>
+<label id="result"></label>
+    <script>
+        function check()
+        {
+        n=parseInt(document.getElementById("num").value)
+        if(n>0)
+        {
+            document.getElementById("result").innerHTML=("positive number")
+        }
+        else if(n<0)
+        {
+            document.getElementById("result").innerHTML=("negative number") 
+        }
+        else{
+            document.getElementById("result").innerHTML=("zero")
+        }
+    }
+    </script>
+</body>
+</html>

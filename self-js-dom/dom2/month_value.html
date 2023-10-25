@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" placeholder="enter month value" id="value"><br>
+    <input type="button" value="check" onclick="month()"><br>
+    <label id="result"></label>
+
+    <script>
+        function month()
+        {
+            let v=document.getElementById("value").value;
+            if(v==1){document.getElementById("result").innerHTML="january"}
+         else if(v==2){document.getElementById("result").innerHTML="february"}
+         else if(v==3){document.getElementById("result").innerHTML="march"}
+         else if(v==4){document.getElementById("result").innerHTML="april"}
+         else if(v==5){document.getElementById("result").innerHTML="may"}
+         else if(v==6){document.getElementById("result").innerHTML="june"}
+         else if(v==7){document.getElementById("result").innerHTML="july"}
+         else if(v==8){document.getElementById("result").innerHTML="august"}
+         else if(v==9){document.getElementById("result").innerHTML="september"}
+         else if(v==10){document.getElementById("result").innerHTML="october"}
+         else if(v==11){document.getElementById("result").innerHTML="november"}
+         else if(v==12){document.getElementById("result").innerHTML="december"}
+        }
+         
+    </script>
+</body>
+</html>

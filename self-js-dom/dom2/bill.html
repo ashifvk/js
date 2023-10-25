@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Bill amount" id="amount"><br><br>
+    <input type="button" value="discount" onclick="bill()"><br><br>
+    <label id="result1"></label><br>
+    <label id="result2"></label>
+    <script>
+        function bill()
+        {
+            var discount=0;
+            let amount=document.getElementById("amount").value;
+            if(amount>1000)
+            {
+                discount=amount*.1;
+            amount=amount-discount;
+            }
+        
+        document.getElementById("result1").innerHTML="Bill amount :"+amount;
+        document.getElementById("result2").innerHTML="Discount amount :"+discount;
+        }
+        
+    </script>
+</body>
+</html>

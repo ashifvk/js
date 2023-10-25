@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="num" placeholder="enter a number"><br>
+
+    <input type="button" onclick="check()" value="check"><br>
+    <label id="result"></label>
+
+    <script>
+        function check() {
+            const random = Math.floor(Math.random() * 10) + 1;
+            let number=document.getElementById("num").value
+            document.getElementById("result").innerHTML=(`guess=${random}`+"<br>")
+                if (number == random) {
+                    document.getElementById("result").innerHTML=('You guessed the correct number.'); 
+            }
+            else{
+                document.getElementById("result").innerHTML=('You guessed the wrong number.'); 
+            }
+        }
+        guessNumber();
+
+    </script>
+</body>
+
+</html>

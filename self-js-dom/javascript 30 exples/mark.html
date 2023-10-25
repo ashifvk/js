@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let s1 = parseInt(prompt("enetr the mark of 1st subject : "))
+        let s2 = parseInt(prompt("enetr the mark of second subject : "))
+        let s3 = parseInt(prompt("enetr the mark of third subject : "))
+        let s4 = parseInt(prompt("enetr the mark of fourth subject : "))
+        let s5 = parseInt(prompt("enetr the mark of fifth subject : "))
+        let avg = (s1 + s2 + s3 + s4 + s5) / 5
+        document.write("total mark=500")
+        document.write("<br>")
+        document.write("avarage mark is : "+ avg)
+        document.write("<br>")
+        if (avg >= 90 && avg <= 100) {
+            document.write("your grade is A+")
+        }
+        else if (avg >= 80) {
+            document.write("your grade is A")
+        }
+        else if (avg >= 70) {
+            document.write(" your grade is B+")
+        }
+        else if (avg >= 60) {
+            document.write("your grade is B")
+        }
+        else if (avg >= 50) {
+            document.write("your grade is C+")
+        }
+        else if (avg >= 40) {
+            document.write(" your grade is C")
+        }
+        else { 
+        document.write("<br>")
+        document.write("failed")}
+    </script>
+</body>
+
+</html>

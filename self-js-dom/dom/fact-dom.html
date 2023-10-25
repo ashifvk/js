@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num" placeholder="enter a number"><br>
+    <input type="button" onclick="fact()" value="factorial"><br>
+    <label id="result"></label>
+    <script>
+        function fact(){
+        let fact=1;
+       let n=parseInt(document.getElementById("num").value)
+        {
+        for(n;n>0;n--)
+        {
+            fact=fact*n;
+           
+        }
+        }
+      
+        document.getElementById("result").innerHTML=fact
+    }
+    </script>
+</body>
+</html>

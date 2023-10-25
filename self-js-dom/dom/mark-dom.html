@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="s1" placeholder="enter the mark of 1st subject"><br>
+    <input type="number" id="s2" placeholder="enter the mark of 2nd subject"><br>
+    <input type="number" id="s3" placeholder="enter the mark of third subject"><br>
+    <input type="number" id="s4" placeholder="enter the mark of fourth subject"><br>
+    <input type="number" id="s5" placeholder="enter the mark of fifth subject"><br>
+
+    <input type="button" onclick="result()" value="result"><br>
+    <label id="result"></label>
+
+    <script>
+        function result() {
+            let s1 = parseInt(document.getElementById("s1").value);
+            let s2 = parseInt(document.getElementById("s2").value);
+            let s3 = parseInt(document.getElementById("s3").value);
+            let s4 = parseInt(document.getElementById("s4").value);
+            let s5 = parseInt(document.getElementById("s5").value);
+
+            let totalMarks = s1 + s2 + s3 + s4 + s5;
+            let avg = totalMarks / 5;
+
+            let resultText = "Total mark = 500";
+            resultText += "<br>";
+            resultText += "Average mark is: " + avg.toFixed(2);
+            resultText += "<br>";
+
+            if (avg >= 90 && avg <= 100) {
+                resultText += "Your grade is A+";
+            } else if (avg >= 80) {
+                resultText += "Your grade is A";
+            } else if (avg >= 70) {
+                resultText += "Your grade is B+";
+            } else if (avg >= 60) {
+                resultText += "Your grade is B";
+            } else if (avg >= 50) {
+                resultText += "Your grade is C+";
+            } else if (avg >= 40) {
+                resultText += "Your grade is C";
+            } else {
+                resultText += "Failed";
+            }
+
+            document.getElementById("result").innerHTML = resultText;
+        }
+    </script>
+</body>
+</html>

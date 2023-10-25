@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter a string" id="str1"><br><br>
+    <input type="text" placeholder="Enter second string" id="str2"><br><br>
+    <input type="button" value="compare" onclick="str()"><br><br>
+    <label id="result"></label><br>
+    
+
+    <script>
+        
+        function str()
+        {
+           let a= document.getElementById("str1").value;
+           let b= document.getElementById("str2").value;
+            let s=(a==b)
+            document.getElementById("result").innerHTML=s;
+          
+        }
+        
+       
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="a" placeholder="base"><br>
+<input type="number" id="b" placeholder="breadth"><br>
+<input type="button" onclick="find()" value="find"><br>
+<label id="result"></label>
+    <script>
+        function find()
+        {
+        let a=parseInt(document.getElementById("a").value);
+        let b=parseInt(document.getElementById("b").value);
+        let perimeter=2*(a+b);
+        document.getElementById("result").innerHTML=("perimeter is :"+perimeter)
+
+        }
+
+       
+    </script>
+</body>
+</html>

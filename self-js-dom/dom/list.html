@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num" placeholder="enter a count"><br>
+    <input type="button" onclick="list()" value="list"><br>
+    <label id="result"></label>
+
+    <script>
+        function list() {
+            let li = [];
+            let n = document.getElementById("num").value;
+
+            for (let i = 1; i <= n; i++) {
+                let num = parseInt(prompt("number"));
+                li.push(num);
+            }
+
+            document.getElementById("result").innerHTML = li.join(', ');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="print" onclick="print()"><br><br>
+    <label id="result"></label><br>
+    
+    <script>
+function print()
+{
+  for( let i=20;i<=75;i++)
+        {
+            if(i==30 ||i==40 ||i==60 ||i==70)
+            continue
+           document.getElementById("result").innerHTML+=i+"<br>";
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="dis" placeholder="enter distance"><br>
+<input type="number" id="speed" placeholder="enter speed"><br>
+<input type="button" onclick="time()" value="Time"><br>
+<label id="result"></label>
+    <script>
+        function time()
+        {
+      let  dis=parseInt(document.getElementById("dis").value);
+      let  speed=parseInt(document.getElementById("speed").value);
+      time=dis/speed;
+      document.getElementById("result").innerHTML=(`time taken to cover ${dis}km in ${speed}km/s speed is ${time} hour`)
+        }
+    </script>
+</body>
+</html>

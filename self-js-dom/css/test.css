@@ -1,0 +1,21 @@
+body{margin: 0px;}
+ul{list-style-type: none;
+overflow: hidden;
+background-color: aqua;
+}
+li{
+    float: left;
+    padding: 20px;
+    color: white;
+    }
+.nav{
+    margin-top: -20px;
+    position: fixed;
+}
+.bold{color: red;}
+.one{margin-left: 600px;}
+.first{background-color: grey;
+height: 600px;}
+
+.three{height: 600px;}
+label{margin-left: 100px;}

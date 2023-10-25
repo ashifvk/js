@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function guessNumber() {
+            const random = Math.floor(Math.random() * 10) + 1;
+            document.write(`guess=${random}`+"<br>")
+            while (true) {
+                number = parseInt(prompt('Guess a number from 1 to 10: '));
+             
+                if (number == random) {
+                    document.write('You guessed the correct number.');
+                    break
+                }
+            }
+        }
+        guessNumber();
+
+    </script>
+</body>
+
+</html>

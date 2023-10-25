@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="a" placeholder="enter first side"><br>
+    <input type="number" id="b" placeholder="enter second side"><br>
+    <input type="number" id="c" placeholder="enter third side"><br>
+<input type="button" onclick="check()" value="check"><br>
+<label id="result"></label>
+    <script>
+        function check()
+        {
+            let a=document.getElementById("a").value;
+            let b=document.getElementById("b").value;
+            let c=document.getElementById("c").value;
+          if(a==b && b==c)
+          {
+          document.getElementById("result").innerHTML=("equitoral triangle")
+          }
+          else if(a==b ||b==c || a==c)
+          {
+            document.getElementById("result").innerHTML=("isocellous triangle")
+          }
+          else{
+            document.getElementById("result").innerHTML=("scalane triangle")
+          }
+        }
+        triangle(3,4,4)
+    </script>
+</body>
+</html>

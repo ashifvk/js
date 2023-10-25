@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="str" placeholder="enter a string"><br>
+
+<input type="button" onclick="pal()" value="check"><br>
+<label id="result"></label>
+    <script>
+        function pal()
+        {
+        let str=document.getElementById("str").value;
+        let spltstr=str.split('');
+        let revstr=spltstr.reverse();
+        let jostr=revstr.join('');
+        if(str==jostr)
+        {
+            document.getElementById("result").innerHTML=("palindrome");
+        }
+        else{
+            document.getElementById("result").innerHTML=("not palindrome");
+        }
+    }
+    </script>
+</body>
+</html>

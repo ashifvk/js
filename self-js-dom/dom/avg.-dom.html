@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num" placeholder="enter a count"><br>
+    <input type="button" onclick="avg()" value="average"><br>
+    <label id="result"></label>
+    <script>
+        function avg() {
+            let n = parseInt(document.getElementById("num").value);
+            let res = 0;
+            for (let i = 1; i <= n; i++) {
+                let num = parseInt(prompt("enter number"));
+                res = res + num;
+            }
+            let average = res / n;
+            document.getElementById("result").innerHTML = `average is ${average}`;
+        }
+    </script>
+</body>
+</html>

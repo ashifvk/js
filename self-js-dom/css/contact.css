@@ -1,0 +1,35 @@
+body{background-color:hsl(271, 59%, 65%);
+align-items: center;
+justify-content: center;
+position: relative;
+display: flex;
+
+}
+
+.border{border:  solid black;
+border-radius: 20px;
+min-width: 800px;
+display: grid;
+grid-template-columns:repeat(2,1fr);
+z-index: 1000;
+overflow: hidden;
+width: 600px;
+height: 500px;
+margin-top: 50px;
+box-shadow: 0 0 20px 10px rgb(88, 33, 140);
+}
+.one{background-color:white;}
+.two{background-color: blueviolet;}
+h3{margin-left: 20px;}
+.img1{margin-top: 60px;
+margin-left: 40px;}
+p{margin-left: 20px;
+margin-top: 50px;}
+
+@media screen and(max-width:600px)
+{.border{
+    background-size: cover;
+    
+}
+    
+}

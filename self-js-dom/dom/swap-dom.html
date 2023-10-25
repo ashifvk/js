@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="a" placeholder="number1"><br>
+    <input type="number" id="b" placeholder="number2"><br>
+    <input type="button" onclick="compare()" value="compare"><br>
+    <label id="result"></label>
+
+    <script>
+        function compare() {
+            let a = parseInt(document.getElementById("a").value);
+            let b = parseInt(document.getElementById("b").value);
+
+            let temp = a;
+            a = b;
+            b = temp;
+
+            document.getElementById("result").innerHTML = "a = " + a + "<br>" + "b = " + b;
+        }
+    </script>
+</body>
+</html>
